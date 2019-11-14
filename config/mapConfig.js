@@ -868,6 +868,6 @@ window.mapConfig = {
     ]
   },
   OprService: {
-    getUser: "https://gischina.github.io"
+    getUser: "https://gischina.github.io/vue-arcgis-2d-demo/"
   }
 }
