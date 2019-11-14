@@ -868,6 +868,6 @@ window.mapConfig = {
     ]
   },
   OprService: {
-    getUser: "https://www.baidu.com/"
+    getUser: "https://gischina.github.io"
   }
 }
