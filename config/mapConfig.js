@@ -1,14 +1,15 @@
 /*
  * @Author: liwei@esrichina.com.cn 
  * @Date: 2019-06-15 01:29:54 
- * @Last Modified by: mikey
- * @Last Modified time: 2019-07-26 08:59:44
+ * @Last Modified by: liwei@esrichina.com.cn
+ * @Last Modified time: 2019-11-14 15:13:03
  */
 
 window.mapConfig = {
-  jsapiUrl: "http://localhost:8085/jsapi/init.js",
-  //jsapiUrl: "http://js.arcgis.com/4.12/",
-  cssUrl: "http://localhost:8085/jsapi/esri/themes/light/main.css",
+  // jsapiUrl: "http://localhost/jsapi/init.js",
+  // cssUrl: "http://localhost/jsapi/esri/themes/light/main.css",
+  jsapiUrl: "https://js.arcgis.com/4.13/",
+  cssUrl: "https://js.arcgis.com/4.13/esri/themes/light/main.css",
   proxyUrl: "",
   center: {
     x: 108.9,
@@ -34,18 +35,18 @@ window.mapConfig = {
     baseEelevation: "https://elevation3d.arcgis.com/arcgis/rest/services/WorldElevation3D/Terrain3D/ImageServer",
     baseImagery: "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
     baseImageryAnno: "https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer",
-    
-    vectorTileLayer:"https://basemaps.arcgis.com/arcgis/rest/services/World_Basemap_v2/VectorTileServer",
-    waterBaseLayer:"http://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineCommunity/MapServer"
+
+    vectorTileLayer: "https://basemaps.arcgis.com/arcgis/rest/services/World_Basemap_v2/VectorTileServer",
+    waterBaseLayer: "http://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineCommunity/MapServer"
   },
   MapImageLayer: {
 
   },
-  waterFeatureLayer:{
+  waterFeatureLayer: {
     //siteLayer:"https://esrizrt.esrixa.com/server/rest/services/waterSiteTestMap_MIL1/MapServer/0",
-    siteLayer:"https://esrizrt.esrixa.com/server/rest/services/waterSiteMap/FeatureServer/0",
-    countyLayer:"https://esrizrt.esrixa.com/server/rest/services/waterSiteMap/FeatureServer/1",
-    cityLayer:"https://esrizrt.esrixa.com/server/rest/services/waterSiteMap/FeatureServer/2"
+    siteLayer: "https://esrizrt.esrixa.com/server/rest/services/waterSiteMap/FeatureServer/0",
+    countyLayer: "https://esrizrt.esrixa.com/server/rest/services/waterSiteMap/FeatureServer/1",
+    cityLayer: "https://esrizrt.esrixa.com/server/rest/services/waterSiteMap/FeatureServer/2"
   },
   FeatureLayer: {
     extent: { //图层范围
@@ -630,8 +631,8 @@ window.mapConfig = {
   },
   WebScene: {
     portalItem: {
-      id:"520a672814934237a1315adcc16be756",
-     // id: "3a9976baef9240ab8645ee25c7e9c096",
+      id: "520a672814934237a1315adcc16be756",
+      // id: "3a9976baef9240ab8645ee25c7e9c096",
       description: "WebScene服务portal Item"
     }
   },
@@ -646,7 +647,7 @@ window.mapConfig = {
     beforeLandslideUrl: "https://sampleserver6.arcgisonline.com/arcgis/rest/services/OsoLandslide/OsoLandslide_Before_3DTerrain/ImageServer",
     afterLandslideUrl: "https://sampleserver6.arcgisonline.com/arcgis/rest/services/OsoLandslide/OsoLandslide_After_3DTerrain/ImageServer"
   },
-  classBreakColorRender:{
+  classBreakColorRender: {
     type: "class-breaks", // 创建ClassBreaksRenderer
     field: "LTTD",
     legendOptions: {
@@ -712,7 +713,7 @@ window.mapConfig = {
       }
     ]
   },
-  uniqueRender:{
+  uniqueRender: {
     type: "unique-value", //唯一值渲染
     legendOptions: {
       title: "报讯等级"
@@ -731,7 +732,7 @@ window.mapConfig = {
     field: "FRGRD",
     uniqueValueInfos: [
       {
-        value: "1", 
+        value: "1",
         symbol: {
           type: "simple-marker", // 简单点符号
           size: 5,
@@ -823,35 +824,35 @@ window.mapConfig = {
       }
     ]
   },
-  heamtmapRender:{
-      type: "heatmap", // 热力图渲染
-      field: "FRGRD", // 属性字段
-      colorStops: [{
-        ratio: 0,
-        color: "rgba(255, 255, 255, 0)"
-      },
-      {
-        ratio: 0.2,
-        color: "rgba(255, 255, 255, 1)"
-      },
-      {
-        ratio: 0.5,
-        color: "rgba(255, 140, 0, 1)"
-      }
+  heamtmapRender: {
+    type: "heatmap", // 热力图渲染
+    field: "FRGRD", // 属性字段
+    colorStops: [{
+      ratio: 0,
+      color: "rgba(255, 255, 255, 0)"
+    },
+    {
+      ratio: 0.2,
+      color: "rgba(255, 255, 255, 1)"
+    },
+    {
+      ratio: 0.5,
+      color: "rgba(255, 140, 0, 1)"
+    }
       ,
-      {
-        ratio: 0.8,
-        color: "rgba(255, 140, 0, 1)"
-      },
-      {
-        ratio: 1,
-        color: "rgba(255, 0, 0, 1)"
-      }
-      ],
-      minPixelIntensity: 0,
-      maxPixelIntensity: 800
+    {
+      ratio: 0.8,
+      color: "rgba(255, 140, 0, 1)"
+    },
+    {
+      ratio: 1,
+      color: "rgba(255, 0, 0, 1)"
+    }
+    ],
+    minPixelIntensity: 0,
+    maxPixelIntensity: 800
   },
-  dotDensityRender:{
+  dotDensityRender: {
     type: "dot-density",
     //dotValue: 50,
     outline: null,
