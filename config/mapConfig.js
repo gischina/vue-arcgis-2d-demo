@@ -2,7 +2,7 @@
  * @Author: liwei@esrichina.com.cn 
  * @Date: 2019-06-15 01:29:54 
  * @Last Modified by: liwei@esrichina.com.cn
- * @Last Modified time: 2019-11-14 15:13:03
+ * @Last Modified time: 2019-11-14 16:05:26
  */
 
 window.mapConfig = {
@@ -868,6 +868,6 @@ window.mapConfig = {
     ]
   },
   OprService: {
-    getUser: "http://localhost:8080/"
+    getUser: "https://www.baidu.com/"
   }
 }
