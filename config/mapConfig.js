@@ -44,9 +44,12 @@ window.mapConfig = {
   },
   waterFeatureLayer: {
     //siteLayer:"https://esrizrt.esrixa.com/server/rest/services/waterSiteTestMap_MIL1/MapServer/0",
-    siteLayer: "https://esrizrt.esrixa.com/server/rest/services/waterSiteMap/FeatureServer/0",
-    countyLayer: "https://esrizrt.esrixa.com/server/rest/services/waterSiteMap/FeatureServer/1",
-    cityLayer: "https://esrizrt.esrixa.com/server/rest/services/waterSiteMap/FeatureServer/2"
+//     siteLayer: "https://esrizrt.esrixa.com/server/rest/services/waterSiteMap/FeatureServer/0",
+//     countyLayer: "https://esrizrt.esrixa.com/server/rest/services/waterSiteMap/FeatureServer/1",
+//     cityLayer: "https://esrizrt.esrixa.com/server/rest/services/waterSiteMap/FeatureServer/2"
+    siteLayer: "https://services7.arcgis.com/FodaQ0mXnLbTAEsi/ArcGIS/rest/services/waterSiteMap/FeatureServer/0",
+        countyLayer: "https://services7.arcgis.com/FodaQ0mXnLbTAEsi/ArcGIS/rest/services/waterSiteMap/FeatureServer/1",
+        cityLayer: "https://services7.arcgis.com/FodaQ0mXnLbTAEsi/ArcGIS/rest/services/waterSiteMap/FeatureServer/2"
   },
   FeatureLayer: {
     extent: { //图层范围
